@@ -8,17 +8,9 @@ import * as _ from 'lodash';
 // Vendors
 import { NgxErrorsModule } from '@hackages/ngxerrors';
 import { LaddaModule } from 'angular2-ladda';
-// import { AccordionModule } from 'ngx-bootstrap/accordion';
-// import { CarouselModule } from 'ngx-bootstrap/carousel';
-// import { CollapseModule } from 'ngx-bootstrap/collapse';
-// import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
-// import { ModalModule } from 'ngx-bootstrap/modal';
-// import { PopoverModule } from 'ngx-bootstrap/popover';
-// import { TabsModule } from 'ngx-bootstrap/tabs';
-// import { TooltipModule } from 'ngx-bootstrap/tooltip';
 
 // Components
-//
+import { ScannerComponent } from './components';
 
 // Options
 import { LaddaOptions } from '@app/options';
@@ -36,7 +28,7 @@ import { LaddaOptions } from '@app/options';
         LaddaModule.forRoot(LaddaOptions), // angular2-ladda
     ],
     declarations: [
-        //
+        ScannerComponent,
     ],
     exports: [
         CommonModule,
@@ -48,6 +40,9 @@ import { LaddaOptions } from '@app/options';
         // Modules
         NgxErrorsModule, // @hackages/ngxerrors
         LaddaModule, // angular2-ladda
+
+        // Components
+        ScannerComponent,
     ],
     providers: []
 })
